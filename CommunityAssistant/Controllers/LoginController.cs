@@ -28,7 +28,7 @@ namespace CommunityAssistant.Controllers
                            where p.PersonEmail.Equals(lc.Username)
                            select p.PersonKey).FirstOrDefault();
                 int rKey = (int)uid;
-                Session["personKey"] = rKey;
+                Session["userKey"] = rKey;
                 Session["Username"] = lc.Username;
                 Message msg = new Message("Thank you "+lc.Username + " for logging in. You can now donate or apply for assitance");
                 return RedirectToAction("Result",msg);

@@ -25,6 +25,7 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Register", "/", "Registration")</li>
                     <li>@Html.ActionLink("Login", "/", "Login")</li>
+                    <li>@Html.ActionLink("Donate", "/", "Donation")</li>
                     <li>@Html.ActionLink(@HttpContext.Current.Session["Username"] == null ? " " : @HttpContext.Current.Session["Username"].ToString(), "/", "Login")</li>
                 </ul>
             </div>
